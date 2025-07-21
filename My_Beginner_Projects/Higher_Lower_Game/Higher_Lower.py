@@ -64,8 +64,6 @@ while game_should_continue:
     b_pop = account_b["population (millions)"]
 
     is_correct = check_answer(guess, a_pop, b_pop)
-    os.system('cls' if os.name == 'nt' else 'clear')
-
     if is_correct:
         score += 1
         print(f"You're right! 🎉 Current score: {score}\n")
